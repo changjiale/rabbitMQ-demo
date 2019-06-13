@@ -35,6 +35,6 @@ public class Recv {
             }
         };
         // 监听队列，第二个参数：是否自动进行消息确认。
-        channel.basicConsume(QUEUE_NAME, true, consumer);
+        channel.basicConsume(QUEUE_NAME, false, consumer);
     }
 }
